@@ -4,8 +4,8 @@ import 'package:flutter_web/responsive.dart';
 
 import '../../../constants.dart';
 
-class OurRover extends StatelessWidget {
-  const OurRover({Key? key}) : super(key: key);
+class WhyMoon extends StatelessWidget {
+  const WhyMoon({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class OurRover extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Container(
-              width: width * 0.12,
+              width: width * 0.4,
                 decoration: BoxDecoration(
                   border: Border(
                       bottom: BorderSide(color: kPrimaryColor, width: 4)),
@@ -27,7 +27,7 @@ class OurRover extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Text(
-                      'Our Rover',
+                      'Why The Moon Matters',
                       style: TextStyle(
                           fontSize: isDesktop(context) ? 44 : 24,
                           fontWeight: FontWeight.w800,

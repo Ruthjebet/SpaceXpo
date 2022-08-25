@@ -4,6 +4,7 @@ import 'package:flutter_web/components/header.dart';
 import 'package:flutter_web/components/side_menu.dart';
 import 'package:flutter_web/screens/home/components/about.dart';
 import 'package:flutter_web/screens/home/components/ourrover.dart';
+import 'package:flutter_web/screens/home/components/whymoon.dart';
 
 import 'components/jumbotron.dart';
 
@@ -43,6 +44,8 @@ class HomeScreen extends StatelessWidget {
                 Jumbotron(),
 
                 About(),
+
+                WhyMoon(),
 
                 OurRover(),
 
