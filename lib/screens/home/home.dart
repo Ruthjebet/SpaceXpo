@@ -3,7 +3,9 @@ import 'package:flutter_web/components/footer.dart';
 import 'package:flutter_web/components/header.dart';
 import 'package:flutter_web/components/side_menu.dart';
 import 'package:flutter_web/screens/home/components/about.dart';
+import 'package:flutter_web/screens/home/components/contactus.dart';
 import 'package:flutter_web/screens/home/components/ourrover.dart';
+import 'package:flutter_web/screens/home/components/ourteam.dart';
 import 'package:flutter_web/screens/home/components/whymoon.dart';
 
 import 'components/jumbotron.dart';
@@ -48,6 +50,10 @@ class HomeScreen extends StatelessWidget {
                 WhyMoon(),
 
                 OurRover(),
+
+                OurTeam(),
+
+                ContactUs(),
 
                 Footer()
               ],

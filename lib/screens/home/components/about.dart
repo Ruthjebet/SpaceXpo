@@ -9,18 +9,30 @@ class About extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+     Size size = MediaQuery.of(context).size;
+    double height = MediaQuery.of(context).size.height;
+    double width = MediaQuery.of(context).size.width;
+
     return Container(
+      height: height * 1, //height to 100% of screen height,
+      width: width * 1,
         decoration: BoxDecoration(color: Color.fromARGB(255, 09, 09, 09)),
         //margin: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
         child: Row(
           children: <Widget>[
-            Expanded(child: Image.asset('assets/images/rover.png')),
+            Expanded(
+              child: Image.asset('assets/images/rover.png')
+              ),
             Expanded(
                 child: Padding(
               padding: EdgeInsets.only(right: 40),
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.start,
-                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: !isMobile(context)
+                        ? MainAxisAlignment.center
+                        : MainAxisAlignment.center,
+                    crossAxisAlignment: !isMobile(context)
+                        ? CrossAxisAlignment.start
+                        : CrossAxisAlignment.center,
                 children: <Widget>[
                   Container(
                     decoration: BoxDecoration(

@@ -25,65 +25,67 @@ class Jumbotron extends StatelessWidget {
             fit: BoxFit.cover),
       ),
 
-      child: Column(children: [
-        Header(),
-        Container(
-            margin: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
-            child: Row(
-              children: <Widget>[
-                Expanded(
-                    child: Padding(
-                  padding: EdgeInsets.only(right: !isMobile(context) ? 40 : 0),
-                  child: Column(
-                    mainAxisAlignment: !isMobile(context)
-                        ? MainAxisAlignment.center
-                        : MainAxisAlignment.center,
-                    crossAxisAlignment: !isMobile(context)
-                        ? CrossAxisAlignment.start
-                        : CrossAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        'Join Us, We are',
-                        style: TextStyle(
-                            fontSize: isDesktop(context) ? 64 : 24,
-                            fontWeight: FontWeight.w800,
-                            color: kTextColor),
-                      ),
-                      Text(
-                        'Going to the Moon!',
-                        style: TextStyle(
-                            fontSize: isDesktop(context) ? 64 : 28,
-                            fontWeight: FontWeight.w800,
-                            color: kTextColor),
-                      ),
-                      SizedBox(height: 10),
-                      Text(
-                        'Help us in making this world a better place for animals.',
-                        textAlign: isMobile(context)
-                            ? TextAlign.center
-                            : TextAlign.start,
-                        style: TextStyle(
-                            fontSize: isDesktop(context) ? 36 : 16,
-                            fontWeight: FontWeight.w300,
-                            color: kTextColor),
-                      ),
-                      SizedBox(height: 10),
-                      Wrap(
-                        runSpacing: 10,
+      child: Column(
+          children: [
+            Header(),
+            Container(
+                margin: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
+                child: Row(
+                  children: <Widget>[
+                    Expanded(
+                        child: Padding(
+                      padding:
+                          EdgeInsets.only(right: !isMobile(context) ? 40 : 0),
+                      child: Column(
+                        mainAxisAlignment: !isMobile(context)
+                            ? MainAxisAlignment.center
+                            : MainAxisAlignment.center,
+                        crossAxisAlignment: !isMobile(context)
+                            ? CrossAxisAlignment.start
+                            : CrossAxisAlignment.center,
                         children: <Widget>[
-                          MainButton(
-                            title: 'See more',
-                            color: kPrimaryColor,
-                            tapEvent: () {},
+                          Text(
+                            'Join Us, We are',
+                            style: TextStyle(
+                                fontSize: isDesktop(context) ? 64 : 24,
+                                fontWeight: FontWeight.w800,
+                                color: kTextColor),
+                          ),
+                          Text(
+                            'Going to the Moon!',
+                            style: TextStyle(
+                                fontSize: isDesktop(context) ? 64 : 28,
+                                fontWeight: FontWeight.w800,
+                                color: kTextColor),
+                          ),
+                          SizedBox(height: 10),
+                          Text(
+                            'Help us in making this world a better place for animals.',
+                            textAlign: isMobile(context)
+                                ? TextAlign.center
+                                : TextAlign.start,
+                            style: TextStyle(
+                                fontSize: isDesktop(context) ? 36 : 16,
+                                fontWeight: FontWeight.w300,
+                                color: kTextColor),
+                          ),
+                          SizedBox(height: 10),
+                          Wrap(
+                            runSpacing: 10,
+                            children: <Widget>[
+                              MainButton(
+                                title: 'See more',
+                                color: kPrimaryColor,
+                                tapEvent: () {},
+                              )
+                            ],
                           )
                         ],
-                      )
-                    ],
-                  ),
+                      ),
+                    )),
+                  ],
                 )),
-              ],
-            )),
-      ]),
+          ]),
     );
   }
 }

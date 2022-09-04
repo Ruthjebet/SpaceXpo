@@ -26,17 +26,7 @@ class DesktopFooter extends StatelessWidget {
       child: Row(
         children: <Widget>[
           Expanded(
-            flex: 1,
-            child: Text(
-              'All Right Reserved',
-              style: TextStyle(
-                fontSize: 10
-              ),
-            )
-          ),
-
-          Expanded(
-            flex: 2,
+           flex: 4,
             child: Row(
               children: <Widget>[
                 NavItem(
@@ -61,6 +51,16 @@ class DesktopFooter extends StatelessWidget {
               ],
             )
           ),
+           Expanded(
+            flex: 1,
+            child: Text(
+              'All Right Reserved',
+              style: TextStyle(
+                fontSize: 10,
+                color: kTextColor,
+              ),
+            )
+          ),
         ],
       ),
     );
@@ -80,9 +80,10 @@ class MobileFooter extends StatelessWidget {
       child: Column(
         children: <Widget>[
           Text(
-            'All Right Reserved',
+            'SpaceXpo.All Right Reserved 2022',
             style: TextStyle(
-              fontSize: 10
+              fontSize: 10,
+              color:kTextColor,
             ),
           ),
           Wrap(
